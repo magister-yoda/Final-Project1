@@ -1,0 +1,112 @@
+<html>
+
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Programming III Stepanakert</h1>
+            </tr>
+            <tr>
+                <h1>Gor Grigoryan</h1>
+            </tr>
+            <td>weather</td>
+            <td id="weather"></td>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Color</th>
+                <th scope="col">Description</th>
+                 <th scope="col">Were born</th>
+                <th scope="col">Now they exist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Green is the grass, which expands every second. The grass expands over the gray floor.</td>
+                <td id="grassCount"></td>
+                <td id="grassLiveCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:yellow;"></td>
+                <td>Yellow is the plant-eating organism. It has 50 life, eating grass multiplies. It walks above the grey floor and in course of time.</td> 
+                <td id="grassEaterCount"></td>
+                <td id="grassEaterLiveCount"></td>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>Red is the predator. It has 70 life, eating plant-eating organism it multiplies. It walks above the grey floor and in course of time</td>
+                    <td id="predatorCount"></td>
+                    <td id="predatorLiveCount"></td>
+                </td>
+            </tr>
+            <tr>
+              
+                <th scope="row">5</th>
+                <td scope="row" style="background-color:blue;"></td>
+                <td>Galuba is the men. It has 50 life, eating plant-eating organism and grass multiplise.It walks above the grey floor and in course of time.</td>
+                    <td id="tradeCount"></td>
+                    <td id="tradeLiveCount"></td>
+                </td>
+            </tr>
+            <tr>
+               <th scope="row">4</th>
+                <td scope="row" style="background-color:#41261B;"></td>
+                <td>Brown is the hunter. It has 25 life, that kills predators and eating plant-eating organism it multiplies. It walks above the grey floor and in course of time.</td>
+                    <td id="hunterCount"></td>
+                    <td id="hunterLiveCount"></td>
+                </td>
+            </tr>
+            <tr>   
+                <th scope="row">6</th>
+                <td scope="row" style="background-color:#3977ff;"></td>
+                <td>Blue is the water. Which expands twice during its time. The water grows on the gray floor.</td>
+                    <td id="waterCount"></td>
+                    <td id="waterLiveCount"></td>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td scope="row" style="background-color:gold;"></td>
+                <td>Golden is the fish. It appears when the amount of water becomes 10. It floats andlessly in water.</td>
+                    <td id="fishCount"></td>
+                    <td id="fishLiveCount"></td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
